@@ -51,21 +51,21 @@ import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
      
 <Router>
         
-          <nav className="navbar navbar-expand-lg p-3 p-3 mb-2 bg-warning ">
+  <nav className="navbar navbar-expand-lg p-3 p-3 mb-2 bg-warning ">
 
-          <Link className="navbar-brand text-white"  to="/">Home</Link>
-          <Link className="navbar-brand text-white" to="/randomQuote">Quote of the Day</Link>
-          <Link className="navbar-brand text-white" to="/fav">Favorites</Link>
+ <Link className="navbar-brand text-white"  to="/">Home</Link>
+ <Link className="navbar-brand text-white" to="/randomQuote">Quote of the Day</Link>
+ <Link className="navbar-brand text-white" to="/fav">Favorites</Link>
               
-          </nav>
+ </nav>
            
-         <div>
-         <Switch>
-           <Route exact path='/' component={Home} />
-           <Route exact path='/randomQuote' component={()=> <RandomQuote myList={this.myList} />} />
-           <Route path= '/fav' component={()=> <Fav clearAll={this.clearAll} mylist={this.state.mylist} clearItem={this.clearItem}/> } />
-         </Switch>
-         </div>
+  <div>
+  <Switch>
+  <Route exact path='/' component={Home} />
+  <Route exact path='/randomQuote' component={()=> <RandomQuote myList={this.myList} />} />
+  <Route path= '/fav' component={()=> <Fav clearAll={this.clearAll} mylist={this.state.mylist} clearItem={this.clearItem}/> } />
+  </Switch>
+  </div>
     
     </Router>
     );

@@ -52,8 +52,8 @@ import axios from 'axios';
                 </div>
 
                  <div>
-          <button id='buttons' onClick={this.getNewQuote}>New quote</button> 
-          <button id='buttons' onClick={()=>this.props.myList(this.state)}>Like</button>
+          <button class='buttons' onClick={this.getNewQuote}>New quote</button> 
+          <button class='buttons' onClick={()=>this.props.myList(this.state)}>Like</button>
           </div> 
 
              </div>

@@ -4,7 +4,7 @@ const Fav = (props) => {
 
     let mainPage;
     if(props.mylist.length == 0){
-        mainPage = <h1>you dont have any favourite</h1>
+        mainPage = <h3>You don't have any favourite quote</h3>
     }
 
     else{
@@ -20,10 +20,13 @@ const Fav = (props) => {
     }
     return(
      <div>
+         <div>
+             <h3>Favourie</h3>
+         </div>
         <div className="card-deck">
          {mainPage}
          </div>
-     <button class="btn btn-light" onClick={()=>props.clearAll()}> Clear All </button>
+     <button id='buttons' onClick={()=>props.clearAll()}> Clear All </button>
      </div>
     );
 }

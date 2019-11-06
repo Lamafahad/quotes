@@ -43,18 +43,19 @@ import axios from 'axios';
             return(
 
                 <div id='wrapper'>
-                <h3 class='title'>Random Quote App</h3>
+                <h3 class='title'>Random Quote</h3>
                  
                 
                 <div id='quote-box'>
-                   <div id='text'> <p class="text-center"> <p>“</p> {quote} <p>“</p> </p></div>
+                   <div id='text'> <p class="text-center"> “ {quote} “ </p></div>
                    <div id='author'> <h5 class="text-center"> {author} </h5></div>
                 </div>
 
-                <div>
-                <button id='buttons' onClick={this.getNewQuote}>new quote</button> 
-                <button id='buttons' onClick={()=>this.props.myList(this.state)}>Like</button>
-                </div>
+                 <div>
+          <button id='buttons' onClick={this.getNewQuote}>New quote</button> 
+          <button id='buttons' onClick={()=>this.props.myList(this.state)}>Like</button>
+          </div> 
+
              </div>
 
             );
@@ -63,4 +64,3 @@ import axios from 'axios';
 
 
 export default RandomQuote;
-

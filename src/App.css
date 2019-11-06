@@ -17,6 +17,20 @@
   color: white;
 }
 
+/* h4{
+
+  font-size: 50px;
+  float: left;
+  margin: 150px;
+}
+
+h6{
+
+  font-size: 50px;
+  float: right;
+  margin: 150px;
+} */
+
 .App-link {
   color: #09d3ac;
 }
@@ -38,6 +52,7 @@ h2{
 h3{
   text-align: center;
   margin: 30px;
+  color:brown;
 }
 
 body{
@@ -49,7 +64,7 @@ body{
   display: inline-block;
   margin: 0 0.1em 0,1em 0;
   border: none;
-  color:white;
+  color: brown;
   border-radius: 2em;
   text-align: center;
   margin-top: 70px;
@@ -60,11 +75,14 @@ body{
   left: 45%;
   transform: translateX(-45%); 
   font-family: 'Encode Sans', sans-serif;
+
 }
 
 .title{
   font-family: 'Encode Sans', sans-serif;
   font-weight: bold;
+  color: brown;
+
 }
 
 #quote-box{

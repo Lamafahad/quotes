@@ -13,7 +13,6 @@ This Quotes project uses java script and react, in order to display random quote
 * React
 * 3rd party API using Axios
 
-
 ## User Stories
 * As a user, I shoud be able to access the navigation bar.
 * As a user, I shoud be shown a random qoutes.
@@ -25,6 +24,11 @@ This Quotes project uses java script and react, in order to display random quote
 
 ## Wireframes 
 
+![Home Page](Home.png)
+![Favorite Page](Favorite.png)
+![Random Quote Page](Random-quote.png)
+
 
 
 ## Url
+https://Lamafahad.github.io/quotes

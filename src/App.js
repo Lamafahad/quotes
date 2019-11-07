@@ -4,8 +4,6 @@ import Home from './Home';
 import RandomQuote from './RandomQuote'
 import axios from 'axios';
 import React, {Component} from 'react';
-
-
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 
  class App extends Component {
@@ -17,13 +15,6 @@ import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
       mylist: [],
     }
   }
-
- /*  clearList = (e) => {
-    this.setState({
-      myList: []
-    });
-  } */
-
 
   myList = (listItem)=> {
     this.setState({
@@ -55,7 +46,7 @@ import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 
  <Link className="navbar-brand text-white"  to="/">Home</Link>
  <Link className="navbar-brand text-white" to="/randomQuote">Quote of the Day</Link>
- <Link className="navbar-brand text-white" to="/fav">Favorites</Link>
+ <Link className="navbar-brand text-white" to="/fav">Favorite</Link>
               
  </nav>
            

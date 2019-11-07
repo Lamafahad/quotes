@@ -9,23 +9,28 @@ const Fav = (props) => {
 
     else{
         mainPage = props.mylist.map((item,i)=> {
-            return     <div  key={i} className="card border-secondary mb-3" style={{maxWidth: "400px"}} >
+          return     <div  key={i} className="card border-secondary mb-3" style={{maxWidth: "400px"}} >
+
            <div class="card-body text-secondary">
            <h5 className="card-title">{item.quote}</h5>
            <p className="card-text">{item.author}</p>
-          </div>
-           <button className="btn btn-primary" className='btn btn-warning' onClick={()=>props.clearItem(item)} >Clear </button>
            </div>
+
+          <button className="btn btn-primary" className='btn btn-warning' onClick={()=>props.clearItem(item)} >Clear </button>
+          </div>
         })
     }
+
     return(
      <div>
          <div>
              <h3>Favourie</h3>
          </div>
-        <div className="card-deck">
+
+         <div className="card-deck">
          {mainPage}
          </div>
+
      <button class='buttons' onClick={()=>props.clearAll()}> Clear All </button>
      </div>
     );
